@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Vaibhav Singh | Full Stack Developer</title>
+  <meta name="description"
+    content="Vaibhav Singh – Full Stack Developer, DSA Enthusiast, and Machine Learning Explorer. Building scalable web applications and AI-driven solutions." />
+  <meta name="keywords" content="Vaibhav Singh, Full Stack Developer, DSA, Machine Learning, React, Python, C++" />
+  <meta property="og:title" content="Vaibhav Singh | Developer Portfolio" />
+  <meta property="og:description"
+    content="Building scalable web applications, solving complex algorithmic problems, and exploring AI-driven solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="canonical" href="https://vaibhavsingh.dev" />
+  <meta name="author" content="Vaibhav Singh" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://vaibhavsingh.dev/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div id="loader-name">
+      <span>V</span><span>A</span><span>I</span><span>B</span><span>H</span><span>A</span><span>V</span><span>&nbsp;</span><span>S</span><span>I</span><span>N</span><span>G</span><span>H</span>
+    </div>
+    <div id="loader-bar-wrap">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-pct">Loading...</div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" id="mobileClose">✕</span>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#terminal-section" onclick="closeMobile()">Terminal</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- Nav -->
+  <nav>
+    <div class="logo">&lt;Vaibhav /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#terminal-section">Terminal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="theme-toggle" onclick="toggleTheme()">☀ Light</button>
+      <div class="burger" id="burgerBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div id="hero">
+    <canvas id="star-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">🚀 &nbsp;Available for opportunities</div>
+      <h1 class="hero-name">
+        <span>Vaibhav</span><br><span class="last">Singh</span>
+      </h1>
+      <div class="typing-wrap">
+        <span id="typing-text"></span><span id="typing-cursor"></span>
+      </div>
+      <p class="hero-bio">Building scalable web applications, solving complex algorithmic problems, and exploring
+        AI-driven solutions that push the boundaries of what's possible.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="resume.pdf" download class="btn-ghost">Download Resume</a>
+        <a href="#contact" class="btn-ghost">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+      <span
+        style="font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.15em;color:var(--muted)">SCROLL</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">// 01 · About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid reveal">
+      <div>
+        <p class="about-bio">"I build <strong>scalable web applications</strong>, solve <strong>complex algorithmic
+            problems</strong>, and explore <strong>AI-driven solutions</strong> that bridge the gap between human needs
+          and technological possibility."</p>
+        <p class="about-bio" style="margin-top:1rem">I'm a Computer Science student with a deep passion for both the
+          engineering and the science behind software — from systems-level optimization to deploying full-stack products
+          that real users love.</p>
+        <p class="about-bio" style="margin-top:1rem">When I'm not coding, I'm competitive programming, writing technical
+          blogs, or studying the architecture of systems that power the modern internet.</p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Problems Solved</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-img-wrap">
+        <div class="about-avatar">
+          <div class="about-avatar-inner">👨‍💻</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">// 02 · Skills</div>
+      <h2 class="section-title">Tech Arsenal</h2>
+      <div class="section-line"></div>
+    </div>
+    <div id="globe-wrap" class="reveal">
+      <canvas id="globe-canvas" width="300" height="300"></canvas>
+    </div>
+    <div class="skills-grid reveal" id="skillsGrid">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">// 03 · Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- Scroll Story -->
+  <section id="story" style="max-width:900px;margin:0 auto">
+    <div class="story-block">
+      <p class="story-text">I don't just write code —<br>I architect <em>experiences</em>.</p>
+    </div>
+    <div class="story-block">
+      <p class="story-text">Every line is a decision.<br>Every function, a <em>contract</em>.</p>
+    </div>
+    <div class="story-block">
+      <p class="story-text">From <em>algorithms</em> to interfaces,<br>I build systems that last.</p>
+    </div>
+    <div class="story-block">
+      <p class="story-text">The future is<br><em>engineered</em>, not discovered.</p>
+    </div>
+  </section>
+
+  <!-- Terminal -->
+  <section id="terminal-section" style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">// 04 · Terminal</div>
+      <h2 class="section-title">Interactive Shell</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="terminal reveal">
+      <div class="term-header">
+        <div class="term-dot"></div>
+        <div class="term-dot"></div>
+        <div class="term-dot"></div>
+        <span class="term-title">vaibhav@portfolio ~ %</span>
+      </div>
+      <div class="term-body" id="termBody">
+        <div class="term-line">Welcome to Vaibhav's portfolio terminal.</div>
+        <div class="term-help">Type a command: <span style="color:var(--neon)">about</span> · <span
+            style="color:var(--neon)">skills</span> · <span style="color:var(--neon)">projects</span> · <span
+            style="color:var(--neon)">contact</span> · <span style="color:var(--neon)">clear</span></div>
+        <div class="term-input-line">
+          <span class="term-prompt">$</span>
+          <input type="text" id="term-input" placeholder="Enter command..." autocomplete="off" spellcheck="false" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat -->
+  <section id="ai-section" style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">// 05 · AI Assistant</div>
+      <h2 class="section-title">Ask About Vaibhav</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="chat-wrap reveal">
+      <div class="chat-header">
+        <div class="chat-avatar">🤖</div>
+        <div>
+          <div class="chat-name">Portfolio AI</div>
+          <div class="chat-status">Online · Powered by Claude</div>
+        </div>
+      </div>
+      <div class="quick-chips">
+        <span class="qchip" onclick="sendQuick('What are your skills?')">🧠 Skills</span>
+        <span class="qchip" onclick="sendQuick('Tell me about your projects')">📦 Projects</span>
+        <span class="qchip" onclick="sendQuick('What is your experience?')">💼 Experience</span>
+        <span class="qchip" onclick="sendQuick('Are you available for work?')">🚀 Availability</span>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg bot">👋 Hi! I'm Vaibhav's AI assistant. Ask me anything about his skills, projects, or
+          experience!</div>
+      </div>
+      <div class="chat-input-wrap">
+        <input type="text" id="chat-input" placeholder="Ask about Vaibhav..."
+          onkeydown="if(event.key==='Enter')sendChat()" />
+        <button id="chat-send" onclick="sendChat()">Send →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">// 06 · Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-form">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="fname" placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="femail" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="fmsg" placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitForm()"><span>Send Message ✦</span></button>
+      </div>
+      <div class="contact-info">
+        <h3>Open to Opportunities</h3>
+        <p>Whether you have a project in mind, a role to fill, or just want to talk tech — my inbox is always open.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <div class="social-icon">⚡</div>
+            <div>
+              <div style="font-weight:600;font-size:.9rem;color:var(--text)">GitHub</div>
+              <div style="font-size:.78rem">github.com/vaibhavsingh</div>
+            </div>
+          </a>
+          <a href="#" class="social-link">
+            <div class="social-icon">💼</div>
+            <div>
+              <div style="font-weight:600;font-size:.9rem;color:var(--text)">LinkedIn</div>
+              <div style="font-size:.78rem">linkedin.com/in/vaibhavsingh</div>
+            </div>
+          </a>
+          <a href="#" class="social-link">
+            <div class="social-icon">🐦</div>
+            <div>
+              <div style="font-weight:600;font-size:.9rem;color:var(--text)">Twitter</div>
+              <div style="font-size:.78rem">@vaibhavsingh</div>
+            </div>
+          </a>
+          <a href="mailto:vaibhav@email.com" class="social-link">
+            <div class="social-icon">📧</div>
+            <div>
+              <div style="font-weight:600;font-size:.9rem;color:var(--text)">Email</div>
+              <div style="font-size:.78rem">vaibhav@email.com</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed & Built with <span>♥</span> by <span>Vaibhav Singh</span> · 2026 · All rights reserved</p>
+  </footer>
+
+  <div id="toast">✓ Message sent successfully!</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+  <script defer src="https://vercel.live/_analytics/script.js"></script>
+</body>
+
+</html>
